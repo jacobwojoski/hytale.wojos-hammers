@@ -1,14 +1,14 @@
 {
-    "Group": "Example",
-    "Name": "ExamplePlugin",
-    "Version": "0.0.2",
-    "Description": "An example plugin for HyTale!",
+    "Group": "wojo",
+    "Name": "Wojo's Hammers",
+    "Version": "0.0.1",
+    "Description": "A Custom Hammer Mod For Hytale",
     "Authors": [
         {
-            "Name": "It's you!"
+            "Name": "Jacobwojoski"
         }
     ],
-    "Website": "example.org",
+    "Website": "https://github.com/jacobwojoski",
     "ServerVersion": "*",
     "Dependencies": {
         
@@ -17,6 +17,6 @@
         
     },
     "DisabledByDefault": false,
-    "Main": "org.example.plugin.ExamplePlugin",
+    "Main": "org.wojo.wojos-hammers.ExamplePlugin",
     "IncludesAssetPack": true
 }
