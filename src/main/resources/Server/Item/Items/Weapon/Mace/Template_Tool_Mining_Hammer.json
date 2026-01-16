@@ -28,7 +28,7 @@
   },
   "Interactions": {
     "Primary": "Root_Weapon_Mace_Primary",
-    "Secondary": "Root_Weapon_Mace_Secondary_Guard",
+    "Secondary": "Pickaxe_Attack",
     "Ability1": "Root_Weapon_Mace_Signature_Groundslam"
   },
   "Tags": {
@@ -51,6 +51,45 @@
         }
       ]
     }
+  },
+  "Tool": {
+    "Specs": [
+      {
+        "Power": 1,
+        "GatherType": "SoftBlocks"
+      },
+      {
+        "Power": 1,
+        "GatherType": "Soils"
+      },
+      {
+        "Power": 1,
+        "GatherType": "Woods"
+      },
+      {
+        "Power": 1,
+        "GatherType": "Rocks"
+      },
+      {
+        "Power": 1,
+        "GatherType": "Benches"
+      },
+      {
+        "Power": 1,
+        "GatherType": "VolcanicRocks"
+      }
+    ],
+    "DurabilityLossBlockTypes": [
+      {
+        "BlockSets": [
+          "Stone",
+          "Rock",
+          "Ores",
+          "Soil"
+        ],
+        "DurabilityLossOnHit": 0.25
+      }
+    ]
   },
   "ItemAppearanceConditions": {
     "SignatureEnergy": [

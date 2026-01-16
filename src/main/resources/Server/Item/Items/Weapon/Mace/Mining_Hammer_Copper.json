@@ -177,7 +177,7 @@
     "Guard_Wield": {
       "Interactions": [
         {
-          "Parent": "Weapon_Mace_Secondary_Guard_Wield",
+          "Parent": "Pickaxe_Attack",
           "StaminaCost": {
             "Value": 8.89,
             "CostType": "Damage"
