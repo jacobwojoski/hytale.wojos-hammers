@@ -8,9 +8,9 @@
   ],
   "Quality": "Common",
   "ItemLevel": 10,
-  "Icon": "Icons/ItemsGenerated/Tool_Pickaxe_Crude.png",
-  "Model": "Items/Tools/Pickaxe/Crude.blockymodel",
-  "Texture": "Items/Tools/Pickaxe/Crude_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Mace_Thorium.png",
+  "Model": "Items/Weapons/Mace/Thorium.blockymodel",
+  "Texture": "Items/Weapons/Mace/Thorium_Texture.png",
   "Recipe": {
     "TimeSeconds": 1,
     "KnowledgeRequired": false,
@@ -91,7 +91,9 @@
   "Interactions": {
     "Primary": "Pickaxe_Attack",
     "Secondary": "Pickaxe_Attack",
-    "Ability1": "Double_Jump"
+    "Ability1": "Double_Jump",
+    "Ability2": "Double_Jump",
+    "Ability3": "Root_Weapon_Mace_Signature_Groundslam"
   },
   "InteractionVars": {
     "Block_Hit_Camera_Effects": {
