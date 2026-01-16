@@ -1,0 +1,3 @@
+// (ECS) Entity, Component, System
+package com.hypixel.component.system;
+
