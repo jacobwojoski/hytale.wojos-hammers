@@ -8,13 +8,13 @@
   ],
   "Set": "Tool_Stone",
   "Icon": "Icons/ItemsGenerated/Tool_Shovel_Crude.png",
-  "Model": "Items/Tools/Shovel/Crude.blockymodel",
-  "Texture": "Items/Tools/Shovel/Crude_Texture.png",
+  "Model": "Items/Weapons/Mace/Crude.blockymodel",
+  "Texture": "Items/Weapons/Mace/Crude_Texture.png",
   "ItemLevel": 3,
   "Tool": {
     "Specs": [
       {
-        "Power": 1,
+        "Power": 0.25,
         "GatherType": "SoftBlocks"
       },
       {
@@ -26,7 +26,7 @@
         "GatherType": "Woods"
       },
       {
-        "Power": 0.05,
+        "Power": 1,
         "GatherType": "Rocks"
       },
       {
@@ -34,7 +34,7 @@
         "GatherType": "Benches"
       },
       {
-        "Power": 0.017,
+        "Power": 0.75,
         "GatherType": "VolcanicRocks"
       }
     ],
@@ -56,7 +56,8 @@
       "Interactions": [
         "Shovel_Attack"
       ]
-    }
+    },
+    "Secondary": "Double_Jump"
   },
   "InteractionVars": {
     "Shovel_Dig_Effect": {
@@ -70,20 +71,9 @@
         }
       ]
     },
-    "Shovel_Dig_Damage": {
+    "Mace_Damage": {
       "Interactions": [
-        {
-          "Parent": "Shovel_Dig_Damage",
-          "DamageCalculator": {
-            "Type": "Dps",
-            "BaseDamage": {
-              "Physical": 5
-            }
-          },
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_Light_Melee_T1_Impact"
-          }
-        }
+        "Weapon_Mace_Primary_Swing_Left_Damage"
       ]
     }
   },
