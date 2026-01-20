@@ -10,7 +10,7 @@
   "Quality": "Common",
   "MaxStack": 1,
   "Categories": [
-    "Items.Tool"
+    "Items.Tools"
   ],
   "PlayerAnimationsId": "Mace",
   "Light": {
@@ -62,5 +62,62 @@
         }
       ]
     }
+  },
+  "Tool": {
+    "Specs": [
+      {
+        "Power": 1,
+        "GatherType": "SoftBlocks"
+      },
+      {
+        "Power": 0.05,
+        "GatherType": "Soils"
+      },
+      {
+        "Power": 0.05,
+        "GatherType": "Woods"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "Rocks"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "Benches"
+      },
+      {
+        "Power": 0.54,
+        "GatherType": "VolcanicRocks"
+      }
+    ],
+    "DurabilityLossBlockTypes": [
+      {
+        "BlockSets": [
+          "Stone",
+          "Rock",
+          "Ores",
+          "Soil"
+        ],
+        "DurabilityLossOnHit": 0.25
+      }
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.45,
+    "Translation": [
+      13.8,
+      -14.4
+    ],
+    "Rotation": [
+      45,
+      270,
+      0
+    ]
+  },
+  "MaxDurability": 150,
+  "Tags": {
+    "Type": [
+      "Tool"
+    ]
   }
 }
