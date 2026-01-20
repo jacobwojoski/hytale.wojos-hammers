@@ -17,6 +17,6 @@
         
     },
     "DisabledByDefault": false,
-    "Main": "org.wojo.wojos-hammers.ExamplePlugin",
+    "Main": "org.wojo.wojos-hammers.WojosMiningHammerPlugin",
     "IncludesAssetPack": true
 }

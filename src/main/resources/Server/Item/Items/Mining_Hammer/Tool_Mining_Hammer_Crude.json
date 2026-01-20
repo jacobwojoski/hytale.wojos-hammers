@@ -46,5 +46,21 @@
         ]
       }
     ]
+  },
+  "Interactions": {
+    "Primary": {
+      "Interactions": [
+        {
+          "Type": "Mining_Hammer_Interaction_Primary_ID"
+        }
+      ]
+    },
+    "Secondary": {
+      "Interactions": [
+        {
+          "Type": "Mining_Hammer_Interaction_Secondary_ID"
+        }
+      ]
+    }
   }
 }
