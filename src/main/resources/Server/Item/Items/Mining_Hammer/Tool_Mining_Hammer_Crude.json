@@ -1,0 +1,15 @@
+{
+  "TranslationProperties": {
+    "Name": "Mining Hammer - This Should use localization soon tm",
+    "Description": "Mining Hammer Description - Should use localization soon"
+  },
+  "Id": "Mining_Hammer_Crude",
+  "Icon": "Icons/ItemsGenerated/my_new_item_icon.png",
+  "Model": "Resources/my_new_item/model.blockymodel",
+  "Texture": "Resources/my_new_item/model_texture.png",
+  "Quality": "Common",
+  "MaxStack": 1,
+  "Categories": [
+    "Items.Tool"
+  ]
+}
