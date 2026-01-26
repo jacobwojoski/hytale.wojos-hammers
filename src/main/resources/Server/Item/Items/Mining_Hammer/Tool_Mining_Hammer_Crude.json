@@ -51,16 +51,24 @@
     "Primary": {
       "Interactions": [
         {
-          "Type": "Mining_Hammer_Interaction_Primary_ID"
+          "Parent": "Weapon_Mining_Hammer_Primary_Selector"
         }
-      ]
+      ],
+      "Cooldown": {
+        "Id": "Mining_Hammer_Primary_Cooldown_Id",
+        "Cooldown": 2
+      }
     },
     "Secondary": {
       "Interactions": [
         {
           "Type": "Mining_Hammer_Interaction_Secondary_ID"
         }
-      ]
+      ],
+      "Cooldown": {
+        "Id": "Mining_Hammer_Secondary_Cooldown_Id",
+        "Cooldown": 1
+      }
     }
   },
   "Tool": {

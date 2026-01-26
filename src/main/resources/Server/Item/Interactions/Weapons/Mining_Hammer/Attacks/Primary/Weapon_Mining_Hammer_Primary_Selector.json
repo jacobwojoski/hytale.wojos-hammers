@@ -1,0 +1,79 @@
+{
+  "Type": "Selector",
+  "$Comment": "Basic Tool calls this first to run animation an check Hit Block vs Hit Entity interaction selector\n  Hit -> Damage Interaction -> Custom Plugin Interaction",
+  "RunTime": 0.6,
+  "Effects": {
+    "ItemAnimationId": "SwingLeft",
+    "WorldSoundEventId": "SFX_Mace_T2_Swing",
+    "LocalSoundEventId": "SFX_Mace_T2_Swing_RL_Local",
+    "CameraEffect": "Mace_Swing_Horizontal",
+    "Trails": [
+      {
+        "PositionOffset": {
+          "X": 0.8,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationOffset": {
+          "Pitch": 0,
+          "Roll": 90,
+          "Yaw": 0
+        },
+        "TargetNodeName": "Handle",
+        "TrailId": "Medium_Default"
+      },
+      {
+        "PositionOffset": {
+          "X": 0.8,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationOffset": {
+          "Pitch": 90,
+          "Roll": 0,
+          "Yaw": 0
+        },
+        "TargetNodeName": "Handle",
+        "TrailId": "Medium_Default"
+      }
+    ]
+  },
+  "Selector": {
+    "Id": "Horizontal",
+    "Direction": "ToLeft",
+    "TestLineOfSight": true,
+    "ExtendTop": 0.25,
+    "ExtendBottom": 0.25,
+    "StartDistance": 0.1,
+    "EndDistance": 1,
+    "Length": 10,
+    "RollOffset": 0,
+    "YawStartOffset": 0
+  },
+  "HitBlock": {
+    "Interactions": [
+      {
+        "Type": "Mining_Hammer_Interaction_Primary_ID"
+      }
+    ]
+  },
+  "HitEntity": {
+    "Interactions": [
+      {
+        "Type": "Mining_Hammer_Interaction_Primary_ID",
+        "RunTime": 2
+      },
+      {
+        "Type": "BreakBlock"
+      }
+    ],
+    "Cooldown": {
+      "Id": "Mining_Hammer_Primary_Cooldown_Id"
+    }
+  },
+  "Next": {
+    "Type": "Simple",
+    "$Comment": "Pad the interaction length",
+    "RunTime": 0.417
+  }
+}

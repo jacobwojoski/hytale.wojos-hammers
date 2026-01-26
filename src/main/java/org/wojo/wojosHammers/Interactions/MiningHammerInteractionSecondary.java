@@ -42,4 +42,5 @@ public class MiningHammerInteractionSecondary extends SimpleInstantInteraction {
         player.sendMessage(Message.raw("You have used the custom item Secondary Interaction"));
     }
 
+
 }
