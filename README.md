@@ -1,3 +1,14 @@
+# Wojos Hammer
+Make a mining hammer that breaks blocks in a 3x3 from the selected item.
+
+## Animation Guide
+The item that triggers the animation creates an interaction chain. A simple chain is as follows
+- `My_Tool.json:: Interactions: { Primary: { My_Tool_Selector.json }` The tool goes to a selector json it pick what the user is hitting
+- `My_Tool_Selector.json: { Effect: { PlayerAnimationId: SwingLeft, <Some selector info> }}` Tell the selector what animation to play and some details about how to select what your animation interacts with.
+- `SwingLeft` Is an key for a key value Animation stored in the `Server/Item/Animations/My_Tool.json` file.
+
+
+
 # Hytale Example Plugin
 
 An example project that can build and run plugins for the game Hytale!
