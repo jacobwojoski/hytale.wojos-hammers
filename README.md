@@ -106,3 +106,46 @@ demonstration purposes, and should **NOT** be included in your final build.
 The example plugin also includes a recipe defined by an asset pack. This recipe
 allows you to craft 10 dirt into 1 dirt using the crafting window. This is also
 an example and should not be removed before you release the plugin.
+
+## Development Planns
+- Hammer
+			- Primary
+				- Light
+					- 1x3x1: Horizontal(Break 3 Blocks total)
+					- (Med Knockback & Minimal dmg vs Hit Monsters)
+				- Heavy
+					- 3x3x1 (Break 9 Blocks)
+					- (Heavy Knockback & Minimal dmg vs Hit Monsters)
+					- Overhead Smash
+			- Secondary
+				- Light
+					- 3x1x1: Vertical (Break 3 Blocks total)
+				- Heavy
+					- Break Single Block (Doesn't drop item? Slow? Tier Down Item?)
+					- (Heavy Knockback & Minimal Damage vs Single Monster)
+			- Special
+				- 3x3x3 (Break 27 Blocks)
+				- Charging
+					- Bonus charge when hitting same block type
+					- Charge decays over time when not breaking blocks
+					- Full charge can decay out
+					- Bonus charge when block gets broken
+			- Components
+				- HammerCharge (Can get added and removed from player)
+					- CurrentChargeValue			0			// Current charge value
+					- MaxTotalChargeValue			150			// Max total carge value
+					- SpecialReadyChargeThreshold	100			// Charge Required for Special to be ready
+					- ChargeDeayDelaySeconds		10 Seconds	// Time Delay before charge starts to decau
+					- ChargeDelayCountdown			10 Seconds	// Delay tracking counter 
+					- ChargeDecayIntervalSeconds	1 Second	// How often does decay get triggered
+					- ChargeDecayValue				5			// How much carge decayed per tick
+					- ChargePerHit					1			// How much charge gained when hitting a block
+					- ChargePerBlockBreak			5			// How much charge gained when breaking a block
+					- BlockTypeBroken				BlockId		// What was the block type that was broken
+					- NumTimesBlockTypeBroken		0			// How many times have we broken the same block type
+					- BonusPerNumBlockBroken		1			// Charge Value * NumTimesBlockTypeBroken as stacking bonus when breaking a block
+				- BreakBlockEvent (Filter entity w/ HammerCharge Component)
+				- HammerChargeSystem (Decays Hammer Change by X Ammount every Y Server Tic's, Remove component at 0)
+			- Misc:
+				- Short Range
+				- Target Block Ghos
